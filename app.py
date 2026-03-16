@@ -62,14 +62,14 @@ if page == "🏠 Home":
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("📚 Algorithms", f"{sum(len(v) for v in algorithms.values())}+")
+        st.metric("📚 Algorithms", "18+")
     with col2:
         st.metric("💻 Languages", "4")
     with col3:
         total_q = sum(len(a['quiz'])
                       for cat in algorithms.values()
                       for a in cat.values())
-        st.metric("🧩 Quiz Questions", f"{total_q}+")
+        st.metric("🧩 Quiz and Intrview Questions", f"{total_q}+")
     with col4:
         st.metric("📊 Categories", len(algorithms))
 
